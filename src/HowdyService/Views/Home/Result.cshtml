@@ -1,0 +1,11 @@
+﻿@model GifView
+
+<h1>Time for some funny stuff!</h1>
+<div style="margin-bottom:10px">
+    @Html.ActionLink("Start again!", "Index", new { }, new { @class = "btn btn-info" })
+</div>
+
+
+<div>
+    <img style="" src=@Model.GiphySource alt="" class="width-set " width="620" height="337" border="1">
+</div>

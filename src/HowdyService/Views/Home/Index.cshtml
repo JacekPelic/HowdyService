@@ -1,0 +1,13 @@
+﻿@model QuestionAnwserView
+
+<h1>Welcome to Micro Howdy!</h1>
+<h2>@Model.Question</h2>
+
+<div class="btn-group-vertical">
+    @foreach (var anwser in Model.Anwsers)
+    {
+    <div>
+        @Html.ActionLink(anwser.Text, "NextQuestion", new { value = anwser.Value }, new { @class = "btn btn-info",@style = "margin-top:10px"})
+    </div>    
+   }
+</div>
